@@ -1,3 +1,4 @@
+import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 import { TypeTable } from "fumadocs-ui/components/type-table";
 import {
     DocsBody,
@@ -30,6 +31,8 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
                     components={getMDXComponents({
                         a: createRelativeLink(source, page),
                         TypeTable,
+                        Accordion,
+                        Accordions,
                     })}
                 />
             </DocsBody>
