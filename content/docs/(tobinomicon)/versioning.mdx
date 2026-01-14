@@ -1,0 +1,33 @@
+---
+title: Versioning
+description: Explaining the custom versioning scheme used for my mods.
+icon: FileUp
+---
+
+## Overview
+
+To maintain clean version strings, I made a custom versioning strategy to replace the standard `version-mc_version` format (e.g., `1.0.0-1.18.2`).
+
+I follow a **MAJOR.MINOR.PATCH** format defined as follows:
+
+### Major
+**Example:** `1.0.0` to `2.0.0`
+This is incremented when:
+- Supporting a new Minecraft major version (e.g., updating from 1.7.10 to 1.12.2).
+- Removing features or introducing breaking changes to the API.
+
+<Callout type="warn" title="Breaking Changes">
+  Major version increments usually indicate incompatible world saves. For example, a world created in `1.0.0` (Minecraft 1.7.10) may lose blocks or items if loaded in `2.0.0` (Minecraft 1.12.2).
+</Callout>
+
+### Minor
+**Example:** `1.1.0` to `1.2.0`
+This is incremented when:
+- New features are added.
+- Existing functionality is expanded without removing old features.
+
+### Patch
+**Example:** `1.0.1` to `1.0.2`
+This is incremented when:
+- Bugs are fixed.
+- Performance improvements or internal refactoring occurs.

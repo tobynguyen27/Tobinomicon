@@ -1,0 +1,6 @@
+{
+    "title": "Tobinomicon",
+    "root": true,
+    "description": "The docs for my mods",
+    "pages": ["---Introduction---", "index", "faq", "versioning", "distributing-platform"]
+}
