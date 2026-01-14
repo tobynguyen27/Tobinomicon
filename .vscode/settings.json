@@ -11,5 +11,12 @@
     "editor.quickSuggestions": {
         "strings": "on"
     },
-    "cSpell.words": ["Bebe", "Modrinth", "Tobinomicon"]
+    "cSpell.words": [
+        "astralgenerators",
+        "Bebe",
+        "Modrinth",
+        "Multiblock",
+        "Resolith",
+        "Tobinomicon"
+    ]
 }
