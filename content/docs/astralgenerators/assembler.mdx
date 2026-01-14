@@ -3,4 +3,59 @@ title: Assembler
 description:  A machine that used to craft recipes with large amounts.
 ---
 
-## Preview
+## Custom recipe
+
+```json title="blast_furnace.json"
+{
+    "type": "astralgenerators:assembler",
+    "duration": 100,
+    "energy": 100,
+    "fluid_input": {
+        "amount": 1000,
+        "fluid": "minecraft:water"
+    },
+    "item_inputs": [
+        {
+            "amount": 1,
+            "item": "minecraft:stone"
+        },
+        {
+            "amount": 3,
+            "item": "minecraft:dirt"
+        }
+    ],
+    "item_output": {
+        "amount": 2,
+        "item": "minecraft:blast_furnace"
+    }
+}
+```
+
+<auto-type-table name="AssemblerRecipe" type='export interface AssemblerRecipe {
+    /** The recipe type identifier. Must be "astralgenerators:assembler" */
+    type: string;
+
+    /** Processing time in ticks. 1 seconds = 20 ticks */
+    duration: number;
+
+    /** Energy cost per tick. */
+    energy: number;
+
+    /**
+     * The fluid required for the crafting.
+     * Amount of fluid in units. 1 bucket = 81000 units.
+     */
+    fluid_input: {
+        amount: number;
+        fluid: string;
+    };
+
+    /**
+     * List of item ingredients required .
+     * Amount can be larger than 64.
+     */
+    item_inputs: { amount: number; item: string }[];
+
+    /** The resulting item */
+    item_output: { amount: number; item: string };
+}' />
