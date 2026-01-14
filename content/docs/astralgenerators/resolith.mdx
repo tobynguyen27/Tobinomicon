@@ -3,4 +3,34 @@ title: Resolith Network
 description: Wireless energy network
 ---
 
-## Preview
+## Overview
+
+**Resolith** <span className='text-fd-muted-foreground text-sm'>(from "Resonant Lithos")</span> is a wireless energy network designed to transfer energy seamlessly between machines without the clutter of physical cables.
+
+## Components
+
+### Resolith Transceiver
+
+The **Resolith Transceiver** is the primary interface of the network. It handles the input and output of energy, serving as the bridge between your machines and the network.
+
+By default, transceiver is in `Import` mode aka `Send energy to network`. You can toggle it to `Export` mode by `Shift + Right CLick` with an empty hand.
+
+### Resolith Relay
+
+Transceivers have a connection limit. To expand your network over large distances or connect multiple clusters of machines, you will need the **Resolith Relay**.
+
+Relays act as signal repeaters. They can connect to Transceivers or other Relays, allowing for theoretically infinite range and scalability.
+
+<Callout title="Performance Warning" type="warning">
+    While the network logic is optimized, building massive networks with excessive connections may still impact server performance (TPS). Plan your routing efficiently!
+</Callout>
+
+### Resolith Manipulator
+
+The **Resolith Manipulator** is the essential handheld tool required to build and manage your network. It allows you to link nodes (Transceivers and Relays) together.
+
+**Controls:**
+
+- **Select Source:** `Shift + Right Click` on a node to select it (starts a connection).
+- **Connect Target:** `Right Click` on a second node to complete the connection.
+- **Clear Selection:** `Shift + Right Click` in the air to cancel your current selection.
