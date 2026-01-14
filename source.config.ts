@@ -1,5 +1,14 @@
 import { defineConfig, defineDocs, frontmatterSchema, metaSchema } from "fumadocs-mdx/config";
 import lastModified from "fumadocs-mdx/plugins/last-modified";
+import {
+    createFileSystemGeneratorCache,
+    createGenerator,
+    remarkAutoTypeTable,
+} from "fumadocs-typescript";
+
+const generator = createGenerator({
+    cache: createFileSystemGeneratorCache(".next/fumadocs-typescript"),
+});
 
 export const docs = defineDocs({
     dir: "content/docs",
@@ -13,7 +22,7 @@ export const docs = defineDocs({
 
 export default defineConfig({
     mdxOptions: {
-        // MDX options
+        remarkPlugins: [[remarkAutoTypeTable, { generator }]],
     },
     plugins: [lastModified()],
 });
