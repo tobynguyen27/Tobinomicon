@@ -5,32 +5,6 @@ description:  A machine that used to craft recipes with large amounts.
 
 ## Custom recipe
 
-```json title="blast_furnace.json"
-{
-    "type": "astralgenerators:assembler",
-    "duration": 100,
-    "energy": 100,
-    "fluid_input": {
-        "amount": 1000,
-        "fluid": "minecraft:water"
-    },
-    "item_inputs": [
-        {
-            "amount": 1,
-            "item": "minecraft:stone"
-        },
-        {
-            "amount": 3,
-            "item": "minecraft:dirt"
-        }
-    ],
-    "item_output": {
-        "amount": 2,
-        "item": "minecraft:blast_furnace"
-    }
-}
-```
-
 <auto-type-table name="AssemblerRecipe" type='export interface AssemblerRecipe {
     /** The recipe type identifier. Must be "astralgenerators:assembler" */
     type: string;
@@ -59,3 +33,30 @@ description:  A machine that used to craft recipes with large amounts.
     /** The resulting item */
     item_output: { amount: number; item: string };
 }' />
+
+
+```json title="blast_furnace.json"
+{
+    "type": "astralgenerators:assembler",
+    "duration": 100,
+    "energy": 100,
+    "fluid_input": {
+        "amount": 1000,
+        "fluid": "minecraft:water"
+    },
+    "item_inputs": [
+        {
+            "amount": 1,
+            "item": "minecraft:stone"
+        },
+        {
+            "amount": 3,
+            "item": "minecraft:dirt"
+        }
+    ],
+    "item_output": {
+        "amount": 2,
+        "item": "minecraft:blast_furnace"
+    }
+}
+```
