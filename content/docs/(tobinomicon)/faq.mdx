@@ -4,6 +4,8 @@ description: Some common questions you may encounter.
 icon: CircleQuestionMark
 ---
 
+import { Step, Steps } from "fumadocs-ui/components/steps";
+
 ## Frequently Asked Questions
 
 <Accordions type="multiple">
@@ -20,18 +22,28 @@ icon: CircleQuestionMark
 ### Troubleshooting
 
 <Accordions type="multiple">
-  <Accordion title="The game crashed! What should I do?" id="faq-crashed">
-  Before submitting a report, please rule out common client-side issues:
-  1. **Check Dependencies:** Ensure you have installed required libraries (e.g., Fabric API, Cloth Config).
-  2. **Verify Version:** Confirm you are running the correct version of Minecraft for the mod file you downloaded.
+    <Accordion title="The game crashed! What should I do?" id="faq-crashed">
+        Before submitting a report, please rule out common client-side issues:
+        - **Check dependencies:** Ensure you have installed required libraries (e.g., Fabric API, Cloth Config).
+        - **Verify version:** Confirm you are running the correct version of Minecraft for the mod file you downloaded.
 
-If the crash persists, please report it using the following steps:
+        If the crash persists, please report it using the following steps:
 
-1. Locate the `crash-reports` folder inside your `.minecraft` directory.
-2. Upload the latest `.txt` crash log to [mclo.gs](https://mclo.gs/).
-3. **Submit the report via one of these channels:** - **GitHub Issues:** Click the "Issues" link found in the mod's menu/page and follow issue template there. - **Discord:** If you prefer not to use GitHub, you can post the link in report channel is my Discord server.
-   </Accordion>
-    </Accordions>
+        <Steps>
+            <Step>Locate the `crash-reports` folder inside your `.minecraft` directory.</Step>
+            <Step>Upload the latest `.txt` crash log to [mclo.gs](https://mclo.gs/).</Step>
+            <Step>
+            Submit the report via one of these channels:
+
+            - **GitHub Issues:** Click the "Issues" link
+            found in the mod's menu/page and follow issue template there.
+            - **Discord:** If you prefer
+            not to use GitHub, you can post the link in report channel is my Discord server.
+            </Step>
+        </Steps>
+    </Accordion>
+
+</Accordions>
 
 ### Permissions
 
