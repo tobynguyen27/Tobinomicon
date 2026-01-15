@@ -1,0 +1,5 @@
+pre-commit:
+    parallel: true
+    jobs:
+        - run: oxfmt --no-error-on-unmatched-pattern
+          stage_fixed: true
