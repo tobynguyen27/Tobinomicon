@@ -12,6 +12,10 @@ export default function Layout({ children }: LayoutProps<"/">) {
                     text: "Documentation",
                     url: "/docs",
                 },
+                {
+                    text: "Maven Repo",
+                    url: "https://maven.tobynguyen.dev",
+                },
                 ...(sharedOptions.links ?? []),
             ]}>
             {children}
