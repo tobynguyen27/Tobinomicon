@@ -2,5 +2,14 @@
     "title": "Astral Generators",
     "root": true,
     "description": "The Create: Astral addon",
-    "pages": ["index", "---Machines---", "assembler", "resolith", "projector"]
+    "pages": [
+        "index",
+        "---Machines---",
+        "assembler",
+        "resolith",
+        "projector",
+        "---Multiblocks---",
+        "boiler",
+        "steam-turbine"
+    ]
 }
