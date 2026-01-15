@@ -1,5 +1,8 @@
 pre-commit:
-    parallel: true
+    parallel: false
     jobs:
         - run: pnpx oxfmt --no-error-on-unmatched-pattern
           stage_fixed: true
+
+        - glob: "*.{js,jsx,ts,tsx,mjs,cjs}"
+          run: pnpm run lint
