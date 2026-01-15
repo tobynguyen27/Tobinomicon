@@ -1,6 +1,6 @@
 ---
 title: Multiblock Projector
-description:  A machine that rendering multiblock shapes for building multiblock easily
+description: A machine that rendering multiblock shapes for building multiblock easily
 ---
 
 ## Overview
@@ -12,28 +12,28 @@ The multiblock projector allows players to visualize complex structures in-game 
 You can extend this feature by adding your own custom structure patterns via a standard Minecraft data pack.
 
 <Callout title="Note" type="info">
-Astral Generators auto format JSON file name into readable name.  
-For example: `fusion_reactor.json` to `Fusion Reactor`
+    Astral Generators auto format JSON file name into readable name. For example:
+    `fusion_reactor.json` to `Fusion Reactor`
 </Callout>
 
 To register a new multiblock pattern, you must place your JSON file in `data/astralgenerators/multiblocks/<your_structure_name>.json`
 
 <Callout title="Attention" type="warning">
-    You must place yor JSON file in `astralgenerators` namespace, otherwise it will be ignored.  
-    **Ignored**: `data/testmod/multiblocks/reactor.json`  
+    You must place yor JSON file in `astralgenerators` namespace, otherwise it will be ignored.
+    **Ignored**: `data/testmod/multiblocks/reactor.json`
     **Accepted**:`data/astralgenerators/multiblocks/reactor.json`
 </Callout>
 
 <auto-type-table title="MultiblockDefinition" type='export interface MultiblockDefinition {
-    /**
-     * The offset coordinates relative to the projector block.
-     * This determines where the structure starts rendering.
-     */
-    origin: {
-        x: number;
-        y: number;
-        z: number;
-    };
+/\*\*
+_ The offset coordinates relative to the projector block.
+_ This determines where the structure starts rendering.
+\*/
+origin: {
+x: number;
+y: number;
+z: number;
+};
 
     /**
      * A dictionary mapping single characters (used in the pattern) to block data.
@@ -48,6 +48,7 @@ To register a new multiblock pattern, you must place your JSON file in `data/ast
      * - String: Columns (X-axis) composed of character keys.
      */
     pattern: string[][];
+
 }'></auto-type-table>
 
 ```json title="boiler.json"

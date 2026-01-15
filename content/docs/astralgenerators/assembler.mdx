@@ -1,13 +1,13 @@
 ---
 title: Assembler
-description:  A machine that used to craft recipes with large amounts.
+description: A machine that used to craft recipes with large amounts.
 ---
 
 ## Custom recipe
 
 <auto-type-table name="AssemblerRecipe" type='export interface AssemblerRecipe {
-    /** The recipe type identifier. Must be "astralgenerators:assembler" */
-    type: string;
+/\*_ The recipe type identifier. Must be "astralgenerators:assembler" _/
+type: string;
 
     /** Processing time in ticks. 1 seconds = 20 ticks */
     duration: number;
@@ -32,8 +32,8 @@ description:  A machine that used to craft recipes with large amounts.
 
     /** The resulting item */
     item_output: { amount: number; item: string };
-}' />
 
+}' />
 
 ```json title="blast_furnace.json"
 {
