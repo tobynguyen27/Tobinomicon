@@ -4,3 +4,51 @@ description: A multiblock that produce steam
 ---
 
 ## Overview
+
+The Boiler is a multiblock used to generate steam by burning fuel to heat up water.
+
+## Construction
+
+### Materials
+
+- Boiler Casings
+
+### Ports
+
+- Item Input Bus: For fuel.
+- Fluid Input Hatch: For water.
+- Fluid Output Hatch: For steam.
+
+<Callout title="Attention" type="warning">
+    Ports block must be in the same layer with the Boiler controller.
+</Callout>
+
+### Building
+
+<Callout title="Wallsharing" type="idea">
+    Boiler can do wallsharing
+</Callout>
+
+Using a [Multiblock Projector](./projector.mdx) will help you building the Boiler easily.
+
+## Operation
+
+### Fueling
+
+Supply fuel (Coal, Logs, Planks) to the Item Input Bus:
+
+- Coal burns for 1600 ticks.
+- Logs burn for 800 ticks.
+- Planks burn for 400 ticks.
+
+### Heating
+
+As fuel burns, the boiler's temperature increases. Steam production begins once the temperature reaches the boiling point (default: 100 Celsius degree).
+
+### Output
+
+<Callout title="Tip" type="info">
+    Water consumption scales with current heat vs max heat.
+</Callout>
+
+Steam is produced in the Output Hatch based on the expansion ratio.

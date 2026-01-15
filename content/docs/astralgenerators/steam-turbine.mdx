@@ -28,13 +28,21 @@ The Steam Turbine is a complex multiblock generator that consumes steam to spin 
 
 ### Building
 
+<Callout title="Wallsharing" type="idea">
+    Steam Turbine can do wallsharing
+</Callout>
+
 Using a [Multiblock Projector](./projector.mdx) will help you building the Steam Turbine easily.
 
-<Callout title="Wallsharing" type="idea">
-    To wallshare, two or more machine controllers need to be placed in such a way that all the
-    shared blocks are in legal locations for all conjoined multiblocks.
-</Callout>
+## Operation
 
-<Callout title="Wallsharing" type="warning">
-    You cannot share ports blocks.
-</Callout>
+### Mechanics
+
+- The turbine consumes steam in the fluid input hatch to spin up the rotor.
+- Rotor Speed increases based on steam consumption and the Accelerator Factor.
+- The rotor naturally slows down over time due to friction (Drag Coefficient).
+
+### Output
+
+- Energy generated based on the current Rotor Speed multiplied by the Energy Multiplier.
+- Condensed steam is output as water. It produces water constantly while spinning, even if not currently consuming steam (dependent on rotor speed > 0).
